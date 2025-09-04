@@ -1,7 +1,23 @@
 {
-  "devDependencies": {
-    "typescript": "^5.9.2"
-  },
   "name": "@emaddehnavi/iban-tools",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "IBAN validation library",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["iban", "typescript", "library"],
+  "repository": "https://github.com/emadgit/iban-tools",
+  "engines": { "node": ">=18" }
 }
