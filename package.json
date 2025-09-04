@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "name": "@emaddehnavi/iban-tools",
+  "version": "0.1.0"
+}
