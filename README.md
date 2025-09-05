@@ -4,6 +4,10 @@
 
 A tiny TypeScript library for working with IBANs.
 
+[![npm version](https://img.shields.io/npm/v/@emaddehnavi/iban-tools.svg)](https://www.npmjs.com/package/@emaddehnavi/iban-tools)
+[![npm downloads](https://img.shields.io/npm/dm/@emaddehnavi/iban-tools.svg)](https://www.npmjs.com/package/@emaddehnavi/iban-tools)
+
+
 ## Features
 
 - **Strict IBAN validation** following ISO 13616
