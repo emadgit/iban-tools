@@ -29,19 +29,19 @@ npm install @emaddehnavi/iban-tools
 ### Strict IBAN validation
 
 ```ts
-import { isValidIbanStrict } from "@emaddehnavi/iban-tools";
+import { isValidIban } from "@emaddehnavi/iban-tools";
 
 // Valid German IBAN
-console.log(isValidIbanStrict("DE89370400440532013000")); // true
+console.log(isValidIban("DE89370400440532013000")); // true
 
 // Invalid (contains spaces)
-console.log(isValidIbanStrict("DE89 3704 0044 0532 0130 00")); // false
+console.log(isValidIban("DE89 3704 0044 0532 0130 00")); // false
 
 // Invalid (lowercase)
-console.log(isValidIbanStrict("de89370400440532013000")); // false
+console.log(isValidIban("de89370400440532013000")); // false
 
 // Invalid (wrong check digits)
-console.log(isValidIbanStrict("DE00370400440532013000")); // false
+console.log(isValidIban("DE00370400440532013000")); // false
 ```
 
 ## License
