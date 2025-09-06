@@ -16,12 +16,24 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsup src/index.ts --format esm,cjs --dts --minify --out-dir dist",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["iban", "typescript", "library"],
+  "keywords": [
+    "iban",
+    "typescript",
+    "library"
+  ],
   "repository": "https://github.com/emadgit/iban-tools",
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
 }
