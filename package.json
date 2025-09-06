@@ -1,6 +1,6 @@
 {
   "name": "@emaddehnavi/iban-tools",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "IBAN validation library",
   "author": {
     "name": "Emad Dehnavi",
